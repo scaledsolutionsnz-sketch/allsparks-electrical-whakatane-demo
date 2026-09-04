@@ -70,7 +70,7 @@ body.loaded #intro{opacity:0;visibility:hidden}
 /* ---------- nav ---------- */
 header{
   position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(20,23,29,.82);
+  background:rgba(20,23,29,.9);
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);
 }
@@ -92,7 +92,7 @@ header{
 }
 .nav-links a:hover{color:var(--text-light)}
 .nav-call{
-  display:flex;align-items:center;gap:8px;height:42px;padding:0 18px;line-height:1;
+  display:flex;align-items:center;gap:8px;height:42px;padding:11px 18px;line-height:1;
   background:var(--accent);color:var(--ink);text-decoration:none;
   font-weight:700;font-size:.95rem;border-radius:var(--r);
   transition:background .25s ease,transform .15s ease;white-space:nowrap;
@@ -149,14 +149,14 @@ header{
 }
 .hero h1{
   color:var(--text-light);font-weight:700;
-  font-size:clamp(2.7rem,7vw,4.9rem);
+  font-size:clamp(2.5rem,5.5vw,3.9rem);
   max-width:15ch;margin-bottom:18px;text-wrap:balance;
 }
 .hero p{color:var(--text-dim);max-width:46ch;margin-bottom:30px;font-size:1.08rem}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  min-height:52px;padding:0 26px;border-radius:var(--r);text-decoration:none;
+  min-height:52px;padding:15px 26px;border-radius:var(--r);text-decoration:none;
   font-weight:700;font-size:1rem;line-height:1;
   transition:background .25s ease,color .25s ease,border-color .25s ease,transform .15s ease;
 }
@@ -166,7 +166,7 @@ header{
 .btn-ghost{border:1px solid rgba(233,232,226,.5);color:var(--text-light)}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
 .hero-review{
-  max-width:430px;background:rgba(20,23,29,.45);
+  max-width:430px;background:rgba(20,23,29,.68);
   backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   border:1px solid var(--line);border-radius:var(--r);
   padding:16px 20px;min-height:118px;
@@ -176,7 +176,7 @@ header{
   color:var(--text-light);font-size:.96rem;line-height:1.55;margin:6px 0 4px;
   transition:opacity .5s ease;
 }
-.hero-review cite{color:var(--text-dim);font-style:normal;font-size:.85rem}
+.hero-review cite{color:#c9cdd5;font-style:normal;font-size:.85rem}
 
 /* ---------- shared section shells ---------- */
 .section{padding:96px 20px}
@@ -238,7 +238,7 @@ header{
 .crew-note{
   display:inline-block;background:var(--ink);color:var(--text-light);
   font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
-  padding:5px 12px;border-radius:var(--r);margin-bottom:16px;
+  padding:5px 12px;border-radius:var(--r);margin:2px 0 14px;
 }
 .crew-row{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:22px}
 .crew-card{
@@ -479,8 +479,8 @@ footer{background:var(--ink);color:var(--text-dim);border-top:1px solid var(--li
 <section class="section" id="crew">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="crew-note">Example team</span>
       <h2>Meet the crew</h2>
+      <span class="crew-note">Example team</span>
       <p>Antony runs every job. Real crew photos and bios drop straight into this section.</p>
     </div>
     <div class="crew-row">
